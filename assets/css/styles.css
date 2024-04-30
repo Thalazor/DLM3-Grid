@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 5fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: 
+    "navbar navbar"
+    "aside products-container"
+    "footer footer";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #25527b;
+    grid-area: navbar;
+    color: white;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    padding-right: 40px;
+    grid-area: aside;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    grid-area: products-container;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6";
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 70%;
+    object-fit: cover;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.btn-buy {
+    width: 100%;
+    background-color: #25527b;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+}
+
+.c1 {
+    grid-area: card1;
+}
+
+.c2 {
+    grid-area: card2;
+}
+
+.c3 {
+    grid-area: card3;
+}
+
+.c4 {
+    grid-area: card4;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #25527b;
+    grid-area: footer;
+    color: white;
+}
+
+footer a {
+    padding: 20px;
+}
+
+
+
