@@ -64,15 +64,23 @@ aside a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card:hover {
+    border: 2px solid #3f89ce;    
 }
 
 .card img {
     width: 70%;
     object-fit: cover;
+    transition: transform 0.3s;
 }
 
 .card img:hover {
     cursor: pointer;
+    transform: scale(1.1)
 }
 
 .card p {
@@ -88,7 +96,7 @@ aside a:hover {
     width: 100%;
     background-color: #25527b;
     color: white;
-    padding: 0.7rem;
+    padding: 0.8rem;
     border: none;
 }
 
