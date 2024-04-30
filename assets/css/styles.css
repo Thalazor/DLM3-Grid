@@ -39,6 +39,11 @@ aside a {
     color: black;
 }
 
+aside a:hover {
+    cursor: pointer;
+    color:#3f89ce;
+}
+
 .products {
     grid-area: products-container;
     margin: 20px;
@@ -66,8 +71,17 @@ aside a {
     object-fit: cover;
 }
 
+.card img:hover {
+    cursor: pointer;
+}
+
 .card p {
     margin-bottom: 20px;
+}
+
+.card h3:hover {
+    color: #3f89ce;
+    cursor: pointer;
 }
 
 .btn-buy {
@@ -76,6 +90,11 @@ aside a {
     color: white;
     padding: 0.7rem;
     border: none;
+}
+
+.btn-buy:hover {
+    background-color: #78a8d4;
+    cursor: pointer;
 }
 
 .c1 {
